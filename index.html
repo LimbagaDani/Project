@@ -1,44 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f5f3ed" />
-    <meta name="description" content="Build and publish a portfolio that feels like you." />
-    <title>folio / portfolio studio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="config.js"></script>
-    <script defer src="app.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio template generator" />
+    <title>Portio</title>
   </head>
   <body>
-    <div class="app-shell">
-      <aside class="sidebar">
-        <a class="brand" href="#home" aria-label="folio home"><span class="brand-mark">f</span><span>folio<span class="brand-period">.</span></span></a>
-        <div class="sidebar-label">WORKSPACE</div>
-        <nav class="primary-nav" aria-label="Main navigation">
-          <a href="#home" data-nav="home"><span class="nav-icon">01</span>Overview</a>
-          <a href="#portfolios" data-nav="portfolios"><span class="nav-icon">02</span>My portfolios</a>
-          <a href="#templates" data-nav="templates"><span class="nav-icon">03</span>Templates <span class="nav-count">3</span></a>
-        </nav>
-        <div class="sidebar-foot">
-          <span class="connection-indicator" id="connection-dot"></span>
-          <div><strong id="connection-label">Database not connected</strong><small id="connection-detail">Connect Supabase to save</small></div>
-          <button class="icon-button" id="settings-button" aria-label="Database settings" title="Database settings">···</button>
-        </div>
-      </aside>
-      <div class="main-column">
-        <header class="topbar">
-          <div class="breadcrumb"><span>STUDIO</span><span class="breadcrumb-slash">/</span><span id="breadcrumb-current">Overview</span></div>
-          <div class="topbar-actions"><span class="saved-status" id="saved-status"></span><button class="button button-dark button-small" id="top-create">New portfolio <span aria-hidden="true">+</span></button></div>
-        </header>
-        <main id="app" tabindex="-1"></main>
-        <footer class="site-footer"><span>folio / portfolio studio</span><span>Made to make your work speak.</span></footer>
-      </div>
-    </div>
-    <div id="modal-root"></div>
-    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
